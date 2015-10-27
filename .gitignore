@@ -39,6 +39,7 @@ Thumbs.db
 # JetBrains PhpStorm #
 ######################
 .idea
+.vscode
 
 # Project Ignores #
 ###################
