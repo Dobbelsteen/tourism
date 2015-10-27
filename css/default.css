@@ -27,18 +27,18 @@
 
 .btn {
   padding: 0.5em 1.5em;
-  background-color: #41b6e8;
+  background-color: #19a9e8;
   color: #FFFFFF;
   border: none;
   border-radius: 0;
-  box-shadow: 3px 3px 0 0 #1580ae;
+  box-shadow: 3px 3px 0 0 #0e668d;
   font-weight: bold;
   letter-spacing: 2px; }
   .btn:hover, .btn:active, .btn:focus {
-    background-color: #41b6e8;
+    background-color: #19a9e8;
     color: #FFFFFF;
     border: none;
-    box-shadow: 2px 2px 0 0 #1580ae;
+    box-shadow: 2px 2px 0 0 #0e668d;
     outline: none;
     margin: 1px 0 -1px 1px; }
 
@@ -46,14 +46,14 @@
   float: left;
   margin-right: 0.3em;
   margin-bottom: 0.4em;
-  border-color: #1AA2DC;
+  border-color: #1388BB;
   color: #2D2D2D;
   -webkit-box-shadow: none;
   box-shadow: none;
   transition: all 0.3s; }
   .form-control:focus {
     color: #2D2D2D;
-    border-color: #1AA2DC;
+    border-color: #1388BB;
     -webkit-box-shadow: none;
     box-shadow: none; }
 
@@ -68,7 +68,7 @@ textarea {
   border-radius: 0;
   box-shadow: 2px 2px 0 0 #CFCFCF; }
   .panel .panel-heading {
-    color: #1580ae;
+    color: #0e668d;
     border-radius: 0;
     border-bottom: 1px transparent;
     background-color: #EFEFEF;
@@ -84,12 +84,12 @@ textarea {
 
 blockquote {
   background-color: #FFFFFF;
-  border: 1px solid #41b6e8;
+  border: 1px solid #19a9e8;
   font-style: italic;
   font-size: 1.2em;
   color: #606060;
   position: relative;
-  box-shadow: 2px 2px 0 0 #41b6e8; }
+  box-shadow: 2px 2px 0 0 #19a9e8; }
   blockquote .quote-author {
     float: right;
     margin-right: 1em;
@@ -114,18 +114,18 @@ h1, h2, h3 {
 h2 {
   margin-top: 10px;
   font-size: 2em;
-  color: #1AA2DC; }
+  color: #0BCB59; }
 
 h3 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-  color: #1AA2DC; }
+  color: #1388BB; }
 
 a {
-  color: #1AA2DC; }
+  color: #1388BB; }
   a:hover, a:active, a:focus {
-    color: #1AA2DC; }
+    color: #1388BB; }
 
 p {
   line-height: 1.8em; }
@@ -135,7 +135,7 @@ p {
 
 #intro {
   position: relative;
-  background-color: #1AA2DC;
+  background-color: #1388BB;
   color: #FFFFFF;
   padding-top: 0; }
   #intro h1 {
@@ -196,12 +196,12 @@ p {
   top: 0;
   z-index: 100;
   border-top: 0;
-  background-color: #1AA2DC;
-  box-shadow: 0 3px 1px 0 #1580ae; }
+  background-color: #1388BB;
+  box-shadow: 0 3px 1px 0 #0e668d; }
 
 #subscribe-container {
-  background-color: #1AA2DC;
-  border-bottom: 2px dashed #FAFAFA; }
+  background-color: #1388BB;
+  border-bottom: 3px dashed #FAFAFA; }
   #subscribe-container h2 {
     color: #FFFFFF; }
   #subscribe-container .intro-subscribe {
@@ -248,28 +248,28 @@ p {
       right: 3.5em;
       transition: all 0.3s; }
       #meeting .list-group .list-group-item .minute .minute-link:hover {
-        color: #1AA2DC; }
+        color: #1388BB; }
     #meeting .list-group .list-group-item:hover {
       background-color: #EFEFEF; }
       #meeting .list-group .list-group-item:hover .arrow-right {
         position: absolute;
         top: 1.5em;
         right: 1em;
-        color: #1AA2DC; }
+        color: #1388BB; }
 
 #getting-started-container {
-  background-color: #e0f3fb;
-  border-top: 2px dashed #1AA2DC;
-  border-bottom: 2px dashed #1AA2DC; }
+  background-color: #bbe6f8;
+  border-top: 3px dashed #1388BB;
+  border-bottom: 3px dashed #1388BB; }
   #getting-started-container #getting-started h2 {
-    color: #1AA2DC; }
+    color: #1388BB; }
 
 #projects-container {
-  background-color: #e0f3fb;
-  border-top: 2px dashed #1AA2DC;
-  border-bottom: 2px dashed #1AA2DC; }
+  background-color: #bbe6f8;
+  border-top: 3px dashed #1388BB;
+  border-bottom: 3px dashed #1388BB; }
   #projects-container #projects h2 {
-    color: #1AA2DC; }
+    color: #1388BB; }
 
 #tools .tool {
   text-align: center; }
@@ -301,15 +301,6 @@ p {
   #dcat-example .code-details p {
     margin-bottom: 2em; }
 
-#faq h3 {
-  color: #2D2D2D; }
-
-#faq p {
-  margin-bottom: 2em;
-  color: #606060; }
-  #faq p:last-of-type {
-    margin-bottom: 0; }
-
 .display-table {
   display: table;
   table-layout: fixed; }
@@ -319,8 +310,11 @@ p {
   vertical-align: middle;
   float: none; }
 
+.slideshare-pres {
+  text-align: center; }
+
 #footer {
-  background-color: #1AA2DC;
+  background-color: #1388BB;
   color: #FFFFFF; }
   #footer p {
     margin: 2em 0 1em 0; }
@@ -344,7 +338,7 @@ p {
       opacity: 1; }
 
 .green {
-  color: #1AA2DC; }
+  color: #1388BB; }
 
 /* =============================
 * MEDIA QUERIES

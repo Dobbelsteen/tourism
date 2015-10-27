@@ -2,10 +2,16 @@
 $osoc-green: #229387;
 
 // new colors
-$color-main: #1AA2DC;
+//$color-main: #1AA2DC;
+//$color-main: #00A643;
+$color-main: #1388BB;
+$color-alt: #0BCB59;
 $color-light-main: lighten( $color-main, 10% );
 $color-lighter-main: lighten( $color-main, 45% );
 $color-dark-main: darken( $color-main, 10% );
+$color-light-alt: lighten( $color-alt, 10% );
+$color-lighter-alt: lighten( $color-alt, 45% );
+$color-dark-alt: darken( $color-alt, 10% );
 $color-red: #ff3333;
 $color-blue: #00a5e0;
 $color-dark-grey: #2D2D2D;
@@ -160,7 +166,7 @@ h1, h2, h3 {
 h2 {
   margin-top: 10px;
   font-size: 2em;
-  color:$color-main;
+  color:$color-alt;
 }
 
 h3 {
@@ -278,7 +284,7 @@ p {
 #subscribe-container {
 
   background-color: $color-main;
-  border-bottom: 2px dashed $color-med-white;
+  border-bottom: 3px dashed $color-med-white;
   
   h2 {
     color: $color-white;
@@ -367,8 +373,8 @@ p {
 #getting-started-container {
   
   background-color: $color-lighter-main;
-  border-top: 2px dashed $color-main;  
-  border-bottom: 2px dashed $color-main;
+  border-top: 3px dashed $color-main;  
+  border-bottom: 3px dashed $color-main;
   
   #getting-started {
     h2 {
@@ -379,8 +385,8 @@ p {
 
 #projects-container {
   background-color: $color-lighter-main;
-  border-top: 2px dashed $color-main;  
-  border-bottom: 2px dashed $color-main;
+  border-top: 3px dashed $color-main;  
+  border-bottom: 3px dashed $color-main;
 
   #projects {
     h2 {
@@ -439,21 +445,6 @@ p {
   }
 }
 
-#faq {
-  h3 {
-    color: $color-dark-grey;
-  }
-
-  p {
-    margin-bottom: 2em;
-    color: $color-lighter-grey;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-}
-
 .display-table{
   display: table;
   table-layout: fixed;
@@ -463,6 +454,10 @@ p {
   display: table-cell;
   vertical-align: middle;
   float: none;
+}
+
+.slideshare-pres {
+  text-align: center;
 }
 
 #footer {
