@@ -49,7 +49,9 @@ gulp.task('watch', function() {
 
 gulp.task('scripts', function() {
   return gulp.src([
-    'bower_components/modernizr/modernizr.js','bower_components/jquery/dist/jquery.min.js' ,'bower_components/bootstrap/dist/js/bootstrap.min.js', 
+    'bower_components/modernizr/modernizr.js',
+    'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/bootstrap/dist/js/bootstrap.min.js', 
     'bower_components/lightbox2/dist/js/lightbox.min.js', 
     'js/main.js'])
     .pipe(concat('js/app.js'))

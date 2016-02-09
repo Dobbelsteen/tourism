@@ -4,9 +4,13 @@ $(function(){
         event.preventDefault();
         var target = "#" + $(this).data('target');
         var offs = $(target).offset().top;
+        
+        if($(window).width() <= 480) {
+            $('#nav > ul').slideToggle();
+        }
 
         $('html, body').animate({
-            scrollTop: offs-80
+            scrollTop: offs-40
         }, 700);
     });
 
@@ -15,6 +19,12 @@ $(function(){
         $('body').animate({
             scrollTop: $('body').offset().top
         }, 700);
+    });
+    
+    $( '.nav-toggle' ).on('click', function(event) {
+        event.preventDefault();
+        $('#nav > ul').slideToggle();
+        return false;
     });
     
     
