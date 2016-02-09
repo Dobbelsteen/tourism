@@ -13,7 +13,7 @@ gulp.task('default', ['live', 'watch', 'scripts', 'css']);
 
 gulp.task('live', ['reload'], function() {
   connect.server({
-    port: 1337,
+    port: 1334,
     livereload: true
   });
   gulp.src('index.html')
@@ -50,6 +50,7 @@ gulp.task('watch', function() {
 gulp.task('scripts', function() {
   return gulp.src([
     'bower_components/modernizr/modernizr.js','bower_components/jquery/dist/jquery.min.js' ,'bower_components/bootstrap/dist/js/bootstrap.min.js', 
+    'bower_components/lightbox2/dist/js/lightbox.min.js', 
     'js/main.js'])
     .pipe(concat('js/app.js'))
     .pipe(gulp.dest('dist/'));
@@ -60,6 +61,7 @@ gulp.task('css', function () {
     'css/normalize.css',
     'bower_components/fontawesome/css/font-awesome.css',
     'bower_components/bootstrap/dist/css/bootstrap.min.css',
+    'bower_components/lightbox2/dist/css/lightbox.min.css',
     'css/default.css'
   ])
     .pipe(concatCss("css/app.css"))

@@ -33,9 +33,10 @@
   border-radius: 0;
   box-shadow: 3px 3px 0 0 #0e668d;
   font-weight: bold;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  transition: background 0.2s; }
   .btn:hover, .btn:active, .btn:focus {
-    background-color: #19a9e8;
+    background-color: #48baec;
     color: #FFFFFF;
     border: none;
     box-shadow: 2px 2px 0 0 #0e668d;
@@ -114,18 +115,19 @@ h1, h2, h3 {
 h2 {
   margin-top: 10px;
   font-size: 2em;
-  color: #0BCB59; }
+  color: #1388BB; }
 
 h3 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-  color: #1388BB; }
+  color: #0BCB59; }
 
 a {
-  color: #1388BB; }
+  color: #1388BB;
+  transition: all .2s; }
   a:hover, a:active, a:focus {
-    color: #1388BB; }
+    color: #0BCB59; }
 
 p {
   line-height: 1.8em; }
@@ -258,21 +260,25 @@ p {
         color: #1388BB; }
 
 #getting-started-container {
-  background-color: #bbe6f8;
+  position: relative;
+  background-color: #eaf7fd;
   border-top: 3px dashed #1388BB;
-  border-bottom: 3px dashed #1388BB; }
-  #getting-started-container #getting-started h2 {
-    color: #1388BB; }
+  border-bottom: 3px dashed #1388BB;
+  background: url(../images/header3_2.png);
+  background-size: cover;
+  background-position: center; }
 
-#projects-container {
-  background-color: #bbe6f8;
+#projects-container, #status-container {
+  background-color: #eaf7fd;
   border-top: 3px dashed #1388BB;
   border-bottom: 3px dashed #1388BB; }
-  #projects-container #projects h2 {
-    color: #1388BB; }
 
 #tools .tool {
   text-align: center; }
+  #tools .tool span {
+    display: block;
+    margin-top: 1em;
+    text-align: left; }
   #tools .tool .tool-img-wrapper {
     line-height: 100px; }
     #tools .tool .tool-img-wrapper img {
@@ -292,6 +298,11 @@ p {
       background-color: lightblue;
       cursor: pointer;
       cursor: hand; }
+
+#vision a {
+  transition: all .2s; }
+  #vision a:hover {
+    color: #0BCB59; }
 
 #dcat-example .code-details {
   text-align: right; }
@@ -339,6 +350,67 @@ p {
 
 .green {
   color: #1388BB; }
+
+#team .team-gallery {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none; }
+  #team .team-gallery li {
+    width: 280px;
+    padding: 15px;
+    text-align: center; }
+    #team .team-gallery li .name {
+      margin-top: 1em;
+      font-size: 1.2em; }
+      #team .team-gallery li .name a {
+        padding: 4px;
+        background-color: #1388BB;
+        color: #FFFFFF;
+        font-size: 0.8em; }
+        #team .team-gallery li .name a:hover, #team .team-gallery li .name a:active, #team .team-gallery li .name a:focus {
+          text-decoration: none;
+          background-color: #19a9e8; }
+        #team .team-gallery li .name a i {
+          font-size: 1.2em; }
+  #team .team-gallery img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 300px;
+    -webkit-transition: -webkit-filter .33s;
+    transition: filter .33s,-webkit-filter .33s;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #ddd;
+    -webkit-filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+    filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9); }
+    #team .team-gallery img:hover {
+      -webkit-filter: none;
+      filter: none; }
+
+#team #community-pictures {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap; }
+  #team #community-pictures a {
+    margin-top: 1em;
+    margin-right: 1em; }
+    #team #community-pictures a img {
+      border-radius: 5px;
+      -webkit-filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+      filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+      -webkit-transition: -webkit-filter .33s;
+      transition: filter .33s,-webkit-filter .33s; }
+      #team #community-pictures a img:hover {
+        -webkit-filter: none;
+        filter: none; }
 
 /* =============================
 * MEDIA QUERIES

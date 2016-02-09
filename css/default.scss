@@ -7,7 +7,7 @@ $osoc-green: #229387;
 $color-main: #1388BB;
 $color-alt: #0BCB59;
 $color-light-main: lighten( $color-main, 10% );
-$color-lighter-main: lighten( $color-main, 45% );
+$color-lighter-main: lighten( $color-main, 55% );
 $color-dark-main: darken( $color-main, 10% );
 $color-light-alt: lighten( $color-alt, 10% );
 $color-lighter-alt: lighten( $color-alt, 45% );
@@ -64,9 +64,10 @@ $color-darkest-white: #CFCFCF;
   box-shadow: 3px 3px 0 0 $color-dark-main;
   font-weight: bold;
   letter-spacing: 2px;
+  transition: background 0.2s;
 
   &:hover, &:active, &:focus {
-    background-color: $color-light-main;
+    background-color: lighten($color-light-main, 10%);
     color: $color-white;
     border: none;
     box-shadow: 2px 2px 0 0 $color-dark-main;
@@ -166,22 +167,23 @@ h1, h2, h3 {
 h2 {
   margin-top: 10px;
   font-size: 2em;
-  color:$color-alt;
+  color:$color-main;
 }
 
 h3 {
   font-size: 1.5em;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
-  color: $color-main;
+  color: $color-alt;
 }
 
 a{
   color: $color-main;
 
   &:hover, &:active, &:focus {
-    color: $color-main;
+    color: $color-alt;
   }
+  transition: all .2s;
 }
 
 p {
@@ -371,34 +373,33 @@ p {
 }
 
 #getting-started-container {
-  
+  position: relative;
   background-color: $color-lighter-main;
   border-top: 3px dashed $color-main;  
   border-bottom: 3px dashed $color-main;
+  background: url(../images/header3_2.png);
+  background-size: cover;
+  background-position: center;
   
-  #getting-started {
-    h2 {
-      color:$color-main;
-    }
-  }
 }
 
-#projects-container {
+#projects-container, #status-container {
   background-color: $color-lighter-main;
   border-top: 3px dashed $color-main;  
   border-bottom: 3px dashed $color-main;
-
-  #projects {
-    h2 {
-      color:$color-main;
-    }
-  }
 }
 
 #tools {
   
   .tool {
     text-align: center;
+    
+    span {
+      display: block;
+      margin-top: 1em;
+      text-align: left;
+    }
+    
 
     .tool-img-wrapper {
       line-height: 100px;
@@ -429,6 +430,16 @@ p {
       cursor: hand;
     }
   }
+}
+
+#vision {
+    a {
+        &:hover {
+            color: $color-alt;
+        }
+
+      transition: all .2s;
+    }
 }
 
 #dcat-example{
@@ -501,6 +512,94 @@ p {
 
 .green {
   color:$color-main;
+}
+
+#team {
+  .team-gallery {
+      display: flex;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      
+      li {
+        width: 280px;
+        padding: 15px;
+        text-align: center;
+        
+        .name {
+          margin-top: 1em;
+          font-size:1.2em;
+        
+          a {
+            padding: 4px;
+            background-color: $color-main;
+            color: $color-white;
+            font-size: 0.8em;
+            
+            &:hover, &:active, &:focus {
+              text-decoration: none;
+              background-color: $color-light-main;
+            }
+            
+            i {
+              font-size: 1.2em;
+            }
+            
+          }
+        }
+      }
+    
+      img{
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 300px;
+        -webkit-transition: -webkit-filter .33s;
+        transition: filter .33s,-webkit-filter .33s;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #ddd;
+        -webkit-filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+        filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+        
+        &:hover {
+          -webkit-filter: none;
+          filter: none;
+        }
+      }
+  }
+  
+  #community-pictures {
+      display: flex;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-around;   
+        -webkit-flex-flow: row wrap;
+      
+      a {
+        margin-top: 1em;
+        margin-right: 1em;
+        
+        img {
+          border-radius: 5px;
+          -webkit-filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+          filter: contrast(2) grayscale(1) opacity(0.7) brightness(0.9);
+          -webkit-transition: -webkit-filter .33s;
+          transition: filter .33s,-webkit-filter .33s;
+        
+          &:hover {
+            -webkit-filter: none;
+            filter: none;
+          }
+        }
+      }
+      
+
+  }
 }
 
 /* =============================
