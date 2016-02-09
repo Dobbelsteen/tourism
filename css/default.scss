@@ -129,7 +129,7 @@ textarea {
 }
 
 blockquote {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.7);
   border: 1px solid $color-light-main;
   font-style: italic;
   font-size: 1em;
@@ -221,6 +221,7 @@ p {
 }
 
 #intro {
+    box-shadow: 0 2px 0 0 $color-dark-main;
     position: relative;
     background-color: $color-main;
     color: $color-white;
@@ -341,47 +342,6 @@ p {
     }
 }
 
-#subscribe-container {
-
-  background-color: $color-main;
-  //border-bottom: 3px dashed $color-med-white;
-  
-  h2 {
-    color: $color-white;
-  }
-  
-  .intro-subscribe {
-    color: $color-white;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-
-  .form-control{
-    border-radius: 0;
-    background-color: $color-white;
-    color: $color-dark-grey;
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    max-width: 200px;
-
-    &:hover {
-      background-color: $color-dark-white;
-    }
-
-    &:focus{
-      color: $color-dark-grey;
-      background-color: $color-dark-white;
-      -webkit-box-shadow: none;
-      box-shadow: none;
-    }
-  }
-
-  .form-group {
-    margin-bottom: 0em;
-  } 
-}
-
 #meeting {
     .list-group {
         box-shadow: 2px 2px 0 0 $color-darkest-white;
@@ -431,21 +391,68 @@ p {
     }
 }
 
-#getting-started-container {
-    position: relative;
+
+
+#getting-started-outer-container {
     background-color: $color-lighter-main;
-    background: url(../images/header3.png);
+    background: url(../images/header2.jpg);
     background-size: cover;
     background-position: center;
-    
-    blockquote {
-        margin-top: 10px;
+        
+        
+    #getting-started-container {
+        
+        h2 {
+            color: $color-white;
+        }
+        
+        background-color:rgba(0,125,138,0.75);
+        padding-top: 50px;
+        padding-bottom: 20px;
+        position: relative;
+        
+        blockquote {
+            margin-top: 10px;
+        }
+        
+        p {
+            color: $color-white;
+            font-size: 1.1em;
+            font-weight: 900;
+        }
+  
+        .intro-subscribe {
+            color: $color-white;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .form-control{
+            border-radius: 0;
+            background-color: $color-white;
+            color: $color-dark-grey;
+            border: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            max-width: 200px;
+
+            &:hover {
+            background-color: $color-dark-white;
+            }
+
+            &:focus{
+            color: $color-dark-grey;
+            background-color: $color-dark-white;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 0em;
+        } 
     }
-    
-    p {
-        font-size: 1.1em;
-        font-weight: 900;
-    }
+
 }
 
 #projects-container, #events-container {
@@ -478,24 +485,6 @@ p {
             }
         }
 
-    }
-}
-
-.code-example {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 0.8em;
-    overflow: auto;
-    position: relative;
-
-    p {
-        white-space: pre;
-        margin-bottom: 0;
-
-        .code-info {
-        background-color: lightblue;
-        cursor: pointer;
-        cursor: hand;
-        }
     }
 }
 

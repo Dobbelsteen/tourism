@@ -83,7 +83,7 @@ textarea {
     word-wrap: normal; }
 
 blockquote {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   border: 1px solid #00abbd;
   font-style: italic;
   font-size: 1em;
@@ -153,6 +153,7 @@ p {
   padding: 1.5em 0; }
 
 #intro {
+  box-shadow: 0 2px 0 0 #004f57;
   position: relative;
   background-color: #007D8A;
   color: #FFFFFF;
@@ -240,32 +241,6 @@ p {
       cursor: hand;
       cursor: pointer; } }
 
-#subscribe-container {
-  background-color: #007D8A; }
-  #subscribe-container h2 {
-    color: #FFFFFF; }
-  #subscribe-container .intro-subscribe {
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 1.1em; }
-  #subscribe-container .form-control {
-    border-radius: 0;
-    background-color: #FFFFFF;
-    color: #2D2D2D;
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    max-width: 200px; }
-    #subscribe-container .form-control:hover {
-      background-color: #EFEFEF; }
-    #subscribe-container .form-control:focus {
-      color: #2D2D2D;
-      background-color: #EFEFEF;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
-  #subscribe-container .form-group {
-    margin-bottom: 0em; }
-
 #meeting .list-group {
   box-shadow: 2px 2px 0 0 #CFCFCF; }
   #meeting .list-group .list-group-item {
@@ -298,17 +273,45 @@ p {
         right: 1em;
         color: #007D8A; }
 
-#getting-started-container {
-  position: relative;
+#getting-started-outer-container {
   background-color: #efefef;
-  background: url(../images/header3.png);
+  background: url(../images/header2.jpg);
   background-size: cover;
   background-position: center; }
-  #getting-started-container blockquote {
-    margin-top: 10px; }
-  #getting-started-container p {
-    font-size: 1.1em;
-    font-weight: 900; }
+  #getting-started-outer-container #getting-started-container {
+    background-color: rgba(0, 125, 138, 0.75);
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: relative; }
+    #getting-started-outer-container #getting-started-container h2 {
+      color: #FFFFFF; }
+    #getting-started-outer-container #getting-started-container blockquote {
+      margin-top: 10px; }
+    #getting-started-outer-container #getting-started-container p {
+      color: #FFFFFF;
+      font-size: 1.1em;
+      font-weight: 900; }
+    #getting-started-outer-container #getting-started-container .intro-subscribe {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.1em; }
+    #getting-started-outer-container #getting-started-container .form-control {
+      border-radius: 0;
+      background-color: #FFFFFF;
+      color: #2D2D2D;
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      max-width: 200px; }
+      #getting-started-outer-container #getting-started-container .form-control:hover {
+        background-color: #EFEFEF; }
+      #getting-started-outer-container #getting-started-container .form-control:focus {
+        color: #2D2D2D;
+        background-color: #EFEFEF;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+    #getting-started-outer-container #getting-started-container .form-group {
+      margin-bottom: 0em; }
 
 #projects-container, #events-container {
   background-color: #efefef; }
@@ -328,19 +331,6 @@ p {
       vertical-align: middle;
       max-width: 100px;
       max-height: 100px; }
-
-.code-example {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.8em;
-  overflow: auto;
-  position: relative; }
-  .code-example p {
-    white-space: pre;
-    margin-bottom: 0; }
-    .code-example p .code-info {
-      background-color: lightblue;
-      cursor: pointer;
-      cursor: hand; }
 
 #vision a {
   transition: all .2s; }

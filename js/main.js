@@ -2,13 +2,15 @@ $(function(){
 
     $('.scroll').on('click', function(event) {
         event.preventDefault();
-        var target = "#" + $(this).data('target');
-        var offs = $(target).offset().top;
         
         if($(window).width() <= 480) {
             $('#nav > ul').slideToggle();
         }
-
+        
+        var target = "#" + $(this).data('target');
+        var offs = $(target).offset().top;
+        
+ 
         $('html, body').animate({
             scrollTop: offs-40
         }, 700);
