@@ -53,109 +53,109 @@ $color-darkest-white: #CFCFCF;
 }
 
 .header-container {
-  max-width: 965px;
-  
-  .header-img {
-      float: left; 
-      height: 120px;
-  }
+    max-width: 965px;
+    
+    .header-img {
+        float: left; 
+        height: 120px;
+    }
 }
 
 .btn {
-  padding: 0.5em 1.5em;
-  background-color: lighten($color-alt, 2%);
-  color: $color-white;
-  border: none;
-  border-radius: 0;
-  box-shadow: 3px 3px 0 0 $color-dark-main;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transition: background 0.2s;
-
-  &:hover, &:active, &:focus {
-    background-color: $color-alt;
+    padding: 0.5em 1.5em;
+    background-color: lighten($color-alt, 2%);
     color: $color-white;
     border: none;
-    box-shadow: 2px 2px 0 0 $color-dark-main;
-    outline: none;
-    margin: 1px 0 -1px 1px;
-  }
+    border-radius: 0;
+    box-shadow: 3px 3px 0 0 $color-dark-main;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background 0.2s;
+
+    &:hover, &:active, &:focus {
+        background-color: $color-alt;
+        color: $color-white;
+        border: none;
+        box-shadow: 2px 2px 0 0 $color-dark-main;
+        outline: none;
+        margin: 1px 0 -1px 1px;
+    }
 }
 
 .form-control{
-  float: left;
-  margin-right: 0.3em;
-  margin-bottom: 0.4em;
-  border-color: $color-main;
-  color: $color-dark-grey;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  transition: all 0.3s;
-
-  &:focus{
-    color: $color-dark-grey;
+    float: left;
+    margin-right: 0.3em;
+    margin-bottom: 0.4em;
     border-color: $color-main;
+    color: $color-dark-grey;
     -webkit-box-shadow: none;
     box-shadow: none;
-  }
+    transition: all 0.3s;
+
+    &:focus{
+        color: $color-dark-grey;
+        border-color: $color-main;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 }
 
 textarea {
-  resize: vertical;
-  color: $color-dark-grey;
-  font-family: "Courier New", Courier, monospace;
+    resize: vertical;
+    color: $color-dark-grey;
+    font-family: "Courier New", Courier, monospace;
 
-  &:focus {
-    background-color: $color-dark-white;
-  }
+    &:focus {
+        background-color: $color-dark-white;
+    }
 }
 
 .panel {
-  border-radius: 0;
-  box-shadow: 2px 2px 0 0 $color-darkest-white;
-
-  .panel-heading {
-    color: $color-dark-main;
     border-radius: 0;
-    border-bottom: 1px transparent;
-    background-color: $color-dark-white;
-    border-color: $color-darkest-white;
-    font-weight: bold;
-  }
+    box-shadow: 2px 2px 0 0 $color-darkest-white;
 
-  .panel-body {
-    border-radius: 0;
-   // border-top: 1px dashed;
-    background-color: $color-white;
-    border-color: $color-darkest-white;
-    padding: 0.8em 1em;
-    word-wrap: normal;
-  }
+    .panel-heading {
+        color: $color-dark-main;
+        border-radius: 0;
+        border-bottom: 1px transparent;
+        background-color: $color-dark-white;
+        border-color: $color-darkest-white;
+        font-weight: bold;
+    }
+
+    .panel-body {
+        border-radius: 0;
+    // border-top: 1px dashed;
+        background-color: $color-white;
+        border-color: $color-darkest-white;
+        padding: 0.8em 1em;
+        word-wrap: normal;
+    }
 }
 
 blockquote {
-  background-color: rgba(255,255,255,0.7);
-  border: 1px solid $color-light-main;
-  font-style: italic;
-  font-size: 1em;
-  line-height: 1.4em;
-  color: $color-lighter-grey;
-  position: relative;
-  box-shadow: 2px 2px 0 0 $color-light-main;
-
-  .quote-author {
-    float: right;
-    margin-right: 1em;
-    margin-top: 0.5em;
-    font-style: normal;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid $color-light-main;
+    font-style: italic;
     font-size: 1em;
-  }
+    line-height: 1.4em;
+    color: $color-lighter-grey;
+    position: relative;
+    box-shadow: 2px 2px 0 0 $color-light-main;
 
-  &.tool-block {
-    min-height: 150px;
-    vertical-align: middle;
-    float: none;
-  }
+    .quote-author {
+        float: right;
+        margin-right: 1em;
+        margin-top: 0.5em;
+        font-style: normal;
+        font-size: 1em;
+    }
+
+    &.tool-block {
+        min-height: 150px;
+        vertical-align: middle;
+        float: none;
+    }
 }
 
 /* =============================
@@ -163,14 +163,14 @@ blockquote {
 * ============================== */
 
 html, body{
-  font-family: 'Lato', sans-serif;
-  color: $color-dark-grey;
-  background-color: $color-med-white;
-  font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: $color-dark-grey;
+    background-color: $color-med-white;
+    font-size: 15px;
 }
 
 h1, h2, h3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 h1 {
@@ -179,16 +179,16 @@ h1 {
 }
 
 h2 {
-  margin-top: 10px;
-  font-size: 2em;
-  color:$color-main;
+    margin-top: 10px;
+    font-size: 2em;
+    color:$color-main;
 }
 
 h3 {
-  font-size: 1.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
-  color: $color-alt;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    color: $color-alt;
 }
 
 a {
