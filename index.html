@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Open Tourism</title>
-    <meta name="description" content="The Open Tourism working group from Open Knowledge Belgium">
+    <meta name="description" content="This working group supports digital creativity concerning tourism and hosts an “Open Standard for Tourism” Vocabulary, which is a reusable Ontology for describing tourism data.">
     <meta name="keywords" content="open, tourism, knowledge, Ghent, Belgium">
     <meta name="author" content="Open Knowledge Belgium">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--
-        Social media stuff goes here (Open Graph, Twitter thingies)
-    -->
+    <meta property="og:title" content="Open Tourism" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="#/images/og_logo.png" />
+    <meta property="og:description" content="This working group supports digital creativity concerning tourism and hosts an “Open Standard for Tourism” Vocabulary, which is a reusable Ontology for describing tourism data." />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="Open Tourism">
+    <meta name="twitter:description" content="This working group supports digital creativity concerning tourism and hosts an “Open Standard for Tourism” Vocabulary, which is a reusable Ontology for describing tourism data. ">
+    <meta name="twitter:image" content="#/images/og_logo.png" />
+    <meta name="twitter:url" content="#" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="dist/css/app.css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <!--
@@ -24,6 +33,7 @@
         <div class="row" id="intro">
             <div class="container header-container">
                 <div class="col-xs-12">
+                    <img class="header-img" src="images/white-logo.png">
                     <h1>Open Tourism</h1>
                     <!--
                         <h2> Subtitle.</h2> -->
@@ -67,31 +77,31 @@
                             </blockquote>
                         </div>
                     </div>
+                    <!--
+                        Subscribe section
+                    -->
                     <div class="row section">
-                    <div class="col-xs-12">
-                        <h2>Newsletter</h2>
-                        <p class="intro-subscribe">
-                            Join the conversation on our mailinglist!
-                        </p>
-                        <form method="POST" action="http://lists.okfn.org/mailman/subscribe/open-tourism-be">
-                            <div class="form-group">
-                                <label class="sr-only" for="fullname">Name</label>
-                                <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail Adress">
-                            </div>
-                            <button type="submit" name="email-button" class="btn btn-default">Subscribe</button>
-                        </form>
+                        <div class="col-xs-12">
+                            <h2>Newsletter</h2>
+                            <p class="intro-subscribe">
+                                Join the conversation on our mailinglist!
+                            </p>
+                            <form method="POST" action="http://lists.okfn.org/mailman/subscribe/open-tourism-be">
+                                <div class="form-group">
+                                    <label class="sr-only" for="fullname">Name</label>
+                                    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="E-mail Adress">
+                                </div>
+                                <button type="submit" name="email-button" class="btn btn-default">Subscribe</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
-        <!--
-            Subscribe section
-        -->
 
         <!--
             Tools and Resources section
@@ -119,11 +129,14 @@
                         </span>
                     </div>
                     <div class="col-xs-12 col-md-4 tool">
-                        <a href="#" target="_blank">
+                        <a>
                             <i class="fa fa-file-text-o fa-5x"></i>
                         </a>
                         <span>
-                            Paper - Laurens Placeholder
+                            Paper presented during the 9th international conference on theory and practice of electronic governance in March 2016:
+                            "Providing Interchangeable Open Data to Accelerate Development of Sustainable Regional Mobile Tourist Guides"<br>
+                            Link coming soon.
+
                         </span>
                     </div>
                 </div>
@@ -142,7 +155,7 @@
                         <h3>Towards a sustainable mobile tourism guide</h3>
                         <p>The  ‘Open Standard for Tourism” Vocabulary is developed in the research project, ‘Towards a sustainable mobile tourism guide’ (Thomas More, iMinds). </p>
                         <p>Both local governments, tourism organisations as well as developers of apps for the sector will be invited to make Tourism Data more exchangable and resusable for mobile applications.</p>
-                        <p><a href="http://www.mobielegidsen.be" target="_blank">More info</a> (Dutch)</p>
+                        <p><a class="link-button" href="http://www.mobielegidsen.be" target="_blank">More (Dutch)</a></p>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <h3>Westtoer</h3>
@@ -258,7 +271,7 @@
                             This meeting is relevant for those intrested in shaping the future of open tourism: "Supporting Digital Creativity in Tourism".
                         </p>
                         <p>
-                            <a class="link-button" href="http://www.mobielegidsen.be/hackathon/">More</a> 
+                            <a class="link-button" target="_blank" href="http://www.mobielegidsen.be/hackathon/">More</a> 
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-6">
@@ -268,16 +281,16 @@
                             We will share and discuss the ‘Open Standard for Tourism Ecosystems Data’, developed by touristic actors in Flanders and a tool for aggregating existing data and mapping it to the tourism vocabulary.
                         </p>
                         <p>
-                            <a class="link-button" href="http://2016.openbelgium.be/session/opentourism-linked-open-data-publishing-and-discovery-workshop">More</a> 
+                            <a class="link-button" target="_blank" href="http://2016.openbelgium.be/session/opentourism-linked-open-data-publishing-and-discovery-workshop">More</a> 
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <h3>Workshop: Getting Started with Open Tourism Data</h3>
                         <p>
-                            Some more information about this workshop goes here.
+                            Workshop organized on 21st of January 2016 in Mechelen, Belgium. The workshop focused on tourism data: publishing raw data, getting from raw data to linked data, hands-on explanation of the tools that facilitate working with tourism data.
                         </p>
                         <p>
-                            <a class="link-button" href="">More</a> 
+                            <a class="link-button" target="_blank" href="https://www.slideshare.net/secret/8vwB5pNO8gMOLY">More</a> 
                         </p>
                     </div>
                     <div class="col-xs-12 col-md-6">
@@ -287,7 +300,7 @@
                             We wrote a blogpost about what we did that day.
                         </p>
                         <p>
-                            <a class="link-button" href="http://2015.openbelgium.be/session/open-tourism/">More</a> 
+                            <a class="link-button" target="_blank" href="http://2015.openbelgium.be/session/open-tourism/">More</a> 
                         </p>
                     </div>
                 </div>
@@ -345,6 +358,22 @@
                                 <p class="name">Raf Buyle<br>
                                     <a class="link-button" href="https://twitter.com/Rafke"><i class="fa fa-twitter"></i> Twitter</a> 
                                     <a class="link-button" href="https://www.linkedin.com/in/rafbuyle"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                                </p>
+                            </li>
+                            </li>
+                            <li>
+                                <img src="images/team/AnastasiaDimou.jpg">
+                                <p class="name">Anastasia Dimou<br>
+                                    <a class="link-button" href="https://twitter.com/natadimou"><i class="fa fa-twitter"></i> Twitter</a> 
+                                    <a class="link-button" href="https://www.linkedin.com/in/anastasia-dimou-a501511b"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                                </p>
+                            </li>
+                            </li>
+                            <li>
+                                <img src="images/team/SusyVanBaelen.jpg">
+                                <p class="name">Susy Van Baelen<br>
+                                    <a class="link-button" href="https://twitter.com/Susyvanbaelen"><i class="fa fa-twitter"></i> Twitter</a> 
+                                    <a class="link-button" href="https://www.linkedin.com/in/susy-van-baelen-707a527"><i class="fa fa-linkedin"></i> LinkedIn</a>
                                 </p>
                             </li>
                         </ul>

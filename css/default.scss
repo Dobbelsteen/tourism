@@ -54,6 +54,11 @@ $color-darkest-white: #CFCFCF;
 
 .header-container {
   max-width: 965px;
+  
+  .header-img {
+      float: left; 
+      height: 120px;
+  }
 }
 
 .btn {
