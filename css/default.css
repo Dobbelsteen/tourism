@@ -328,6 +328,9 @@ p {
     margin-top: 1em;
     text-align: left;
     line-height: 1.8em; }
+    @media screen and (max-width: 992px) {
+      #tools .tool span {
+        margin-bottom: 2em; } }
   #tools .tool .tool-img-wrapper {
     line-height: 100px; }
     #tools .tool .tool-img-wrapper img {

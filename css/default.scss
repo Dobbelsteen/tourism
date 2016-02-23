@@ -477,6 +477,10 @@ p {
             margin-top: 1em;
             text-align: left;
             line-height: 1.8em;
+            
+            @media screen and (max-width: 992px) {
+                margin-bottom: 2em;
+            }
         }
         
 
